@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    top: 0px;
+}
+
+p{
+    top: 40px;
+}
+
+.show{
+    opacity: 0;
+}
+
+
+
+
+/* main img **********************************************/
+.img-container{
+    width: 75vh;
+    height: 35vw;
+    overflow: hidden;
+}
+
+
+/* added with js */
+.img-container .visible{
+    opacity: 100%;
+    transition: 0.5s;
+}
+/* ****************************************************** */
+
+
+
+/* aside img *****************************************/
+.img-aside-container{
+    width: 25vw;
+    height: 7vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    filter: grayscale(90%) ;
+}
+
+/* added with js */
+.activate{
+    filter: none;
+}
+
+.img-aside-container img{
+    position: absolute;
+    transform: translate(-25%,-15%);
+}
+
+button{
+    border-radius: 50%;
+    font-size: 1.1rem;
+    
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+#up{
+    position: absolute;
+    top: 10px;
+    right: 58%;
+    padding-bottom: 2px;
+}
+
+#down{
+    position: absolute;
+    right: 58%;
+    bottom: 23px;
+    padding-bottom: 2px;
+}
+/* ****************************************************** */
